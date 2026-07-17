@@ -35,9 +35,9 @@
         "android.permission.FOREGROUND_SERVICE",
         "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
       ],
-      "googleServicesFile": "./google-services.json",
       "predictiveBackGestureEnabled": false,
-      "package": "com.dev_lucy.portl"
+      "package": "com.lalit_kumar_rai.portl",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "output": "server",
@@ -112,9 +112,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "2cbc4df0-9dd9-4908-ac05-00d64692f826"
+        "projectId": "ff7c0e57-5c0b-40cf-9a45-38a47301579d"
       }
     },
-    "owner": "dev_lucy"
+    "owner": "lalit_kumar_rai"
   }
 }

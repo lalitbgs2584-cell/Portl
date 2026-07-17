@@ -10,6 +10,7 @@ type ThemeState = {
   colors: typeof theme.light;
   setMode: (mode: ThemeMode) => void;
   toggleTheme: () => void;
+  radius: typeof radius;
 };
 
 export const useThemeStore = create<ThemeState>()(
@@ -17,6 +18,7 @@ export const useThemeStore = create<ThemeState>()(
     (set, get) => ({
       mode: Appearance.getColorScheme() as ThemeMode ?? 'dark',
       colors: theme[Appearance.getColorScheme() as ThemeMode ?? 'dark'],
+      radius: radius,
 
       setMode: (mode) => set({ mode, colors: theme[mode] }),
 

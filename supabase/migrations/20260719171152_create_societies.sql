@@ -1,0 +1,21 @@
+CREATE TABLE public.societies(
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    name VARCHAR(255) NOT NULL,
+    join_code VARCHAR(8) NOT NULL UNIQUE,
+    description TEXT,
+    address_line_1 VARCHAR(255),
+    address_line_2 VARCHAR(255),
+    city VARCHAR(255),
+    district VARCHAR(255),
+    state VARCHAR(255),
+    country VARCHAR(255),
+    pincode VARCHAR(6),
+    logo_path TEXT,
+    cover_image_path TEXT,
+    contact_email VARCHAR(255),
+    contact_phone VARCHAR(15),
+    status public.society_status DEFAULT 'active',
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()),
+    deleted_at TIMESTAMP WITH TIME ZONE
+);

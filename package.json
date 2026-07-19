@@ -19,6 +19,7 @@
     "@react-navigation/elements": "^2.9.10",
     "@react-navigation/native": "^7.1.33",
     "@supabase/supabase-js": "^2.110.6",
+    "dev": "^0.1.5",
     "expo": "~55.0.28",
     "expo-audio": "~55.0.16",
     "expo-auth-session": "~55.0.17",
@@ -75,6 +76,7 @@
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
+    "supabase": "^2.109.1",
     "typescript": "~5.9.2"
   },
   "private": true

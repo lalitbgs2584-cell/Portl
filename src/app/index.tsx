@@ -8,7 +8,6 @@ import Header from "@/components/ui/Header";
 import { useRouter } from "expo-router";
 import { useRoleStore } from "@/store/useRoleStore";
 
-// Admin is index 0, Resident is index 1, Guard is index 2
 const [admin, resident, guard] = UserRoles;
 
 export default function Index() {
@@ -78,6 +77,7 @@ export default function Index() {
             />
           </Pressable>
         </View>
+
       </ScrollView>
     </View>
   );

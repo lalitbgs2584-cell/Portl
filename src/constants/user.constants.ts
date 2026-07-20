@@ -10,6 +10,10 @@ export const UserRoles = [
     {
         name: "Guard",
         image: require("@/assets/app-icons/guard.png")
+    },
+    {
+        name: "Staff",
+        image: require("@/assets/app-icons/guard.png")
     }] as const
 
 export type UserRole = (typeof UserRoles)[number];

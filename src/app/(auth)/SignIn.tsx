@@ -107,6 +107,7 @@ export default function SignInScreen() {
           <TouchableOpacity
             style={[styles.primaryBtn, { backgroundColor: colors.primary, borderRadius: radius.xl }]}
             activeOpacity={0.85}
+            onPress={() => router.push('/(auth)/Otp' as never)}
           >
             <Text style={[styles.primaryBtnText, { color: colors.primaryForeground }]}>Sign In</Text>
           </TouchableOpacity>

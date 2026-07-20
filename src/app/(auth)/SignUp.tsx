@@ -108,6 +108,7 @@ export default function SignUpScreen() {
           <TouchableOpacity
             style={[styles.primaryBtn, { backgroundColor: colors.primary, borderRadius: radius.xl }]}
             activeOpacity={0.85}
+            onPress={() => router.push('/(auth)/JoinSociety' as never)}
           >
             <Text style={[styles.primaryBtnText, { color: colors.primaryForeground }]}>Create Account</Text>
           </TouchableOpacity>
